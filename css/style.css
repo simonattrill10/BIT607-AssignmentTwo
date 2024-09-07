@@ -1,0 +1,547 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    padding-top: 55px;
+    text-align: center;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h4{
+    font-size: 1.5em;
+}
+
+h5{
+    font-size: 1em;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(55, 55, 55);
+    box-shadow: 0px 5px 5px rgba(55, 55, 55, 0.501);
+    position: fixed;
+    width: 100%;
+    min-height: 55px;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;   
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar-links li a:hover {
+    color: rgb(83, 205, 205);
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+/*main*/
+.main-header{
+    position: relative;
+    text-align: center;
+}
+
+.main-pic{
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.img-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-title {
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    text-shadow: 3px 3px 3px rgb(55, 55, 55);
+  }
+
+.button{
+    border-radius: 5px;
+    color: black;
+    background-color: #ddd;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.button:hover{
+    background-color: rgb(83, 205, 205);
+    padding: 10px 44px;
+    font-weight: bold;
+    box-shadow: 2px 2px rgb(55, 55, 55);
+}
+
+.section-one{
+    padding: 50px 40px;
+}
+
+.intro h2{
+    font-size: 2.5em;
+}
+
+.img-sc{
+    position: relative;
+    text-align: center;
+}
+
+.section-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+    
+}
+
+.img-c{
+    width: 80%;
+}
+
+h3{
+    font-size: 2em;
+    color: rgb(83, 205, 205);
+    text-shadow: 1px 1px 1px rgb(55, 55, 55);
+}
+
+.img-dk{
+    filter: brightness(50%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(55, 55, 55);
+}
+
+.img-center p{
+    color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+}
+
+.section-three {
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+.section-three h2{
+    padding: 10px;
+}
+
+.our-story{
+    width: 40%;
+    padding: 20px;
+}
+
+
+footer{
+    background-color: rgb(55, 55, 55);;
+}
+
+.footer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.footer-links ul{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-links li{
+    list-style: none;   
+}
+
+.footer-links li a:hover {
+    color: rgb(83, 205, 205);
+}
+
+
+
+/*book*/
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking p{
+    padding: 20px;
+}
+
+.booking .button{
+    background-color: rgb(83, 205, 205);
+}
+
+aside{
+    width: 25%;
+    text-align: left;
+}
+
+.booking-form{
+    margin: auto;
+    width: 75%;
+    margin-bottom: 50px;
+}
+
+input[type=text], input[type=email], textarea, select, input[type=date]{
+    border-radius: 50px;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+input[type=text]:hover, input[type=email]:hover, textarea:hover, select:hover, input[type=date]:hover{
+    background-color: rgb(225, 255, 255);
+}
+
+
+
+form{
+    padding: 20px;
+    margin-left: auto;
+    width: 70%;
+    text-align: left;
+    background-color: rgb(229, 229, 229);
+    border-radius: 20px;
+}
+
+form h4{
+    text-align: center;
+}
+
+.button-center{
+    text-align: center;
+}
+
+.submit{
+    background-color: rgb(83, 205, 205);
+}
+
+
+/*menu*/
+
+.menu{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+}
+
+article{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.item p, .item h5{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.menu-item{
+    text-align: left;
+    width: 75%;
+}
+
+.price{
+    text-align: right;
+    width: 25%;
+}
+
+.menu-pics img{
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.menu-pics{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-full{
+    width: 70%;
+}
+
+.menu-book{
+    padding: 40px;
+}
+
+.menu-book h4{
+    padding: 10px;
+}
+
+.menu-book .button{
+    background-color: rgb(83, 205, 205);
+}
+
+.menu-book .button:hover{
+    box-shadow: 2px 2px rgb(55, 55, 55);
+}
+
+/* contact */
+
+.contact-form{
+    margin: 40px;
+}
+
+.contact-form form{
+    margin: 0 auto;
+}
+
+.contact-map{
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+
+
+/* HOurs */
+
+table{
+    margin: 50px auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+/*Te ao maori*/
+
+.teaomaoriwidth{
+    width: 50%;
+    padding: 10px;
+}
+
+iframe{
+    border-width: 0;
+}
+
+.teaomaorilist{
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+}
+
+.teaomaoriinfo{
+    text-decoration: none;
+    color: rgb(194, 116, 0);
+}
+
+.teaomaoriinfo:hover{
+    background-color: rgb(55, 55, 55);
+    color: rgb(83, 205, 205);
+}
+
+
+@media (max-width: 1000px) {
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{ 
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding:  .5rem 1rem;
+        
+    }
+
+    .navbar-links.active{
+        display: flex;
+       
+    }
+
+
+    /*index*/
+
+    .main-title {
+        font-size: 2.5em;
+      }
+
+
+    .section-two{
+        flex-direction: column;
+    }
+
+    .img-c{
+        max-width: 30%;
+    }
+
+    .section-three{
+        width: 100%;
+    }
+
+    .section-three p{
+        padding: 15px;
+    }
+
+    .container{
+        width: 92%;
+    }
+
+
+/*menu*/
+
+    .menu{
+        width: 92%;
+    }
+
+
+    .menu-pics{
+        width: 0%;
+        display: none;
+    }
+
+    .menu-full{
+        width: 100%;
+    }
+
+/* booking */
+
+    .content{
+        flex-direction: column-reverse;
+    }
+
+    aside{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .booking-form{
+        margin: auto;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    form{
+        padding: 20px;
+        width: 100%;
+    }
+
+    /*hour*/
+
+    .calendar iframe{
+        width: 92%;
+    }
+
+    table{
+
+        width: 92%;
+    }
+
+    /* contact */
+
+    .contact-map{
+        width: 100%;
+    }
+
+
+
+
+    /*te ao maori*/
+
+    .teaomaoriwidth{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .img-c{
+        max-width: 50%;
+    }
+
+}

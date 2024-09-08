@@ -2,8 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -435,7 +434,6 @@ iframe{
 
     .navbar-links li a{
         padding:  .5rem 1rem;
-        
     }
 
     .navbar-links.active{
